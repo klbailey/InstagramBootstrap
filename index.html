@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed with Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="styles.css">   
+</head>
+<body>
+    <!-- HEADER  -  bg-light:light grey; p-3:padding to 1rem -->
+    <div class="container-fluid bg-light p-3"> 
+        <div class="row">
+            <!-- LOGO -->
+            <div class="col-7">
+                <img style="width: 15%; height: 90%" class="logo"; src="./img/instagramLogo.png">
+            </div>
+            <!-- BUTTON -->
+            <div class="col-3">
+                <!-- BUTTON TRIGGER MODAL data-toggle="modal" opens modal window; data-target="#myModal" points to id of modal-->
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#myModal">Create a new post</button>
+                <!-- MODAL  -->
+                <div id="myModal" class="modal fade">
+                    <div class="modal-dialog">                
+                        <!-- MODAL CONTENT-->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5>Create a new post</h5>
+                            </div>
+                            <div class="modal-body">
+                                <h6>Caption:</h6>
+                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Add the caption of your post here"></textarea>
+                                <br />
+                                <img style="width: 5%; height: 5%" class="camera"; src="./img/camera.png">
+                                <img style="width: 5%; height: 5%" class="map"; src="./img/map.png">
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-success" data-bs-dismiss="modal">Publish</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- COG MENU DROPDOWN-->
+            <div class="col-2">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="./img/cog.png">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Accessibility</a></li>
+                        <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Log out</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>

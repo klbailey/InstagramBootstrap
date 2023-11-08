@@ -1,0 +1,9 @@
+body {
+    background-color: teal;
+}
+
+.container-fluid {
+    margin-top: 75px;
+    height: 80%;
+    width: 70%;
+}
