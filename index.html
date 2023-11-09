@@ -8,12 +8,12 @@
     <link rel="stylesheet" type="text/css" href="styles.css">   
 </head>
 <body>
-    <!-- HEADER  -  bg-light:light grey; p-3:padding to 1rem -->
+    <!-- HEADER -  bg-light:light grey; p-3:padding to 1rem -->
     <div class="container-fluid bg-light p-3"> 
         <div class="row">
             <!-- LOGO -->
             <div class="col-7">
-                <img style="width: 15%; height: 90%" class="logo"; src="./img/instagramLogo.png">
+                <img style="width: 25%; height: 90%; margin-left: 35px" class="logo"; src="./img/instagramLogo.png">
             </div>
             <!-- BUTTON -->
             <div class="col-3">
@@ -53,15 +53,116 @@
                         <li><a class="dropdown-item" href="#">Accessibility</a></li>
                         <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Log out</a></li>
+                        <li><a class="dropdown-item text-danger" href="#">Log out</a></li>
                     </ul>
+                </div>
+            </div>
+
+            <!-- ********************************************** -->
+                        <!-- TESTING BECAUSE ACCORDIAN DIDN'T WORK RIGHT -->
+            <ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="navbar-brand nav-justified" href="#">
+                        <img id="home-tab" data-bs-toggle="collapse" data-bs-target="#myTabContent" src="./img/grid.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="navbar-brand nav-justified" href="#">
+                        <img id="single-tab" data-bs-toggle="collapse" data-bs-target="#singleContent" src="./img/square.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                </li>
+            </ul>
+            <div class="tab-content" id="pills-tabContent">
+                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"></div>
+                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"></div>
+            </div>
+              <!-- ******************************************************** -->
+
+            <!-- MENU HOW TO VIEW PHOTOS ACCORDIAN -->
+            <!-- <div class="panel-group" id="myAccordian">
+                <div class="row text-center">
+                    <div class="col-5"></div>
+                    <div class="col-sm-1 col-1 mt-3 mr-0">
+                        <img id="home-tab" data-bs-toggle="collapse" data-bs-target="#myTabContent" src="./img/grid.png" class="w-20"> 
+                    </div>
+                    <div class="col-sm-1 col-1 mt-3 ml-0">
+                        <img id="single-tab" data-bs-toggle="collapse" data-bs-target="#singleContent" src="./img/square.png" class="w-20">
+                    </div>
+                    <div class="col-5"></div>
+                </div> -->
+
+                <!-- GRID WITH 3 IMAGES PER ROW (tabindex="0") element placed in default navigation order-->
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="home-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"> 
+                        <div class="container m-1">
+                            <!-- ROW ONE g-0 is no gutter -->
+                            <div class="row g-0">
+                                <div class="col-4 p-1">
+                                <!-- img-fluid images are made responsive -->
+                                <img class="img-fluid h-100 w-100" src="./img/Rodney.jpg">
+                            </div>
+                            <div class="col-4 p-1">
+                                <img class="img-fluid h-100 w-100" src="./img/Santa.jpg">
+                            </div>
+                            <div class="col-4 p-1">
+                                <img class="img-fluid h-100 w-100" src="./img/panama.jpg">
+                            </div>
+                            <!-- ROW TWO -->
+                            <div class="row g-0">
+                                <div class="col-4 p-1">
+                                <img class="img-fluid h-100 w-100" src="./img/surf.jpg">
+                            </div>
+                            <div class="col-4 p-1">
+                                <img class="img-fluid h-100 w-100" src="./img/Rodney.jpg">
+                            </div>
+                            <div class="col-4 p-1">
+                                <img class="img-fluid h-100 w-100" src="./img/Santa.jpg">
+                            </div>
+                            <!-- ROW THREE -->
+                            <div class="row g-0">
+                                <div class="col-4 p-1">
+                                <img class="img-fluid h-100 w-100" src="./img/panama.jpg">
+                            </div>
+                            <div class="col-4 p-1">
+                                <img class="img-fluid h-100 w-100" src="./img/surf.jpg">
+                            </div>
+                            <div class="col-4 p-1">
+                                <img class="img-fluid h-100 w-100" src="./img/Rodney.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ONE IMAGE BY ROW -->  
+                <div class="tab-content" id="singleContent">
+                    <div class="tab-pane show active" id="single-pane" role="tabpanel" aria-labelledby="single-tab">
+                        <div class="container m-1">
+                            <!-- POST HEADING -->
+                            <div class="row g-0">
+                                <div class="col-12 p-1">
+                                    <h2>My beautiful boy</h2>
+                                </div>
+                            </div>
+                            <!-- POST IMAGE -->
+                            <div class="row g-0">
+                                <div class="col-12">
+                                    <img src="./img/Rodney.jpg">
+                                </div>
+                            <!-- POST DESCRIPTION-->
+                            <div class="row g-0">
+                                <div class="col-12">
+                                    <p>This is Rodney who is six years old. He was named after Rodney 
+                                        Dangerfield - not my idea. <strong>#Frenchie</strong></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.2/js/bootstrap.min.js" integrity="sha512-a6ctI6w1kg3J4dSjknHj3aWLEbjitAXAjLDRUxo2wyYmDFRcz2RJuQr5M3Kt8O/TtUSp8n2rAyaXYy1sjoKmrQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
 </body>
 </html>
+
+
